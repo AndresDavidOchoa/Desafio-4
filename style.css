@@ -4,7 +4,6 @@
 /*---------------------------------------BODY------------------------------*/
 body {
     background-color: rgb(202, 240, 248);
-
 }
 
 .grid {
@@ -17,7 +16,6 @@ body {
         "footer footer footer";
     row-gap: 15px;
     column-gap: 10px;
-
 }
 
 /*--------------------------------------------H1 y H2-----------------------*/
@@ -55,17 +53,24 @@ ul li {
     display: inline;
     list-style-type: none;
     overflow: hidden;
-    background-color: rgb(3, 4, 94);
-    padding: 8px;
-    margin-right: 10px;
+    margin: 8px;
 }
 
 li a {
     color: white;
+    background-color: rgb(3, 4, 94);
     text-align: center;
-    padding: 14px 16px;
+    padding: 12px 24px;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    transition: 0.8s;
+}
+
+
+
+li a:hover {
+    background-color: rgba(0, 0, 0, 0.166);
 }
 
 /*--------------------------------Main------------------------------*/
@@ -82,7 +87,6 @@ li a {
     height: 100%;
     margin: auto;
     text-align: center;
-
 }
 
 .price {
@@ -117,6 +121,7 @@ li a {
 .img-container>img {
     width: 250px;
     height: 250px;
+    transform: rotate(0.5turn);
 }
 
 /*--------------------------------------Footer------------------------------*/
