@@ -6,39 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de juegos|Psn</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+     <!--ICONO DE PAGINA-->
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+     <!-----------------------------------FONT AWESOME CDN----------------------------->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-----------------------------------FONT AWESOME CDN----------------------------->
+     <!------------------------------------CDN BOOSTRAP-------------------------------->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <!-------------------------------------CDN BOOSTRAP------------------------------->
+     <!------------------------------------CDN ANIMATION------------------------------->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+     <!------------------------------------CDN ANIMATION------------------------------->
+     <!------------------------------------CSS----------------------------------------->
+     <link rel="stylesheet" href="style.css">
+     <!------------------------------------CSS----------------------------------------->
 </head>
 
 <body>
 
-    <!--Encabezado-->
-    <header>
+     <!--Encabezado-->
+     <header class="container">
         <!--Zona navegable - menu -->
-        <nav class="nav-container">
-
-            <a href="index.html"> <img src="assets/games.png" alt="logo de pagina" class= "animate__animated animate__bounce"></a>
-
-            <ul>
-
-                <li>
-                    <a href="nintendo.html">Nintendo</a>
-                </li>
-
-                <li>
-                    <a href="psn.html">PSN</a>
-                </li>
-
-                <li>
-                    <a href="xbox.html">XBOX</a>
-                </li>
-
-                <li>
-                    <a href="nosotros.html">Nosotros</a>
-                </li>
-
-            </ul>
-
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #74b9ea;">
+            <div class="container-fluid">
+                <a class="navbar-brand active" href="index.html"> <img src="assets/games.png" alt="logo de pagina"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="nintendo.html" href="#">Nintendo</a>
+                        <a class="nav-link" href="psn.html">PSN</a>
+                        <a class="nav-link" href="xbox.html">XBOX</a>
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </div>
+                </div>
+            </div>
         </nav>
 
     </header>
@@ -153,18 +161,41 @@
     </main>
 
 
-    <footer class="footer-grid">
-        <!-- Contenido del footer  -->
+    <!-- Contenido del footer  -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-row">
 
-        <div class="footer">
-            <a href="Nosotros.html">Nosotros</a>
-            <a>Contactanos</a>
-            <a>Siguenos</a>
+                <div class="footer-col">
+                    <h4>Nosotros</h4>
+                    <ul>
+                        <li><a href="nosotros.html"> Sobre nosotros</a></li>
+                        <li><a href="index.html"> Integrantes</a></li>
+                        <li><a href="index.html"> Nuestra politica</a></li>
+                    </ul>
+                </div>
 
-        </div>
+                <div class="footer-col">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="index.html">Estado de la compra</a></li>
+                        <li><a href="index.html">Devoluciones</a></li>
+                        <li><a href="index.html">Medios de pago</a></li>
+                        <li><a href="index.html">Atencion al cliente</a></li>
+                    </ul>
+                </div>
 
-        <div class="copyright">
-            <p>© GAMES STORE 2022</p>
+                <div class="footer-col">
+                    <h4>Redes sociales</h4>
+                    <div class="redes-sociales">
+                        <a href="index.html"><i class="fab fa-facebook-f"></i></a>
+                        <a href="index.html"><i class="fab fa-twitter"></i></a>
+                        <a href="index.html"><i class="fab fa-instagram"></i></a>
+                        <a href="index.html"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
     </footer>
