@@ -24,13 +24,6 @@ nav img {
     vertical-align: middle;
 }
 
-ul li {
-    display: inline;
-    list-style-type: none;
-    overflow: hidden;
-    margin: 8px;
-}
-
 /*--------------------------------Main------------------------------*/
 .card {
     background-color: rgb(173, 232, 244);
@@ -59,6 +52,7 @@ ul li {
     cursor: pointer;
     width: 100%;
     font-size: 18px;
+    transition: 0.5s;
 }
 
 .card button:hover {
@@ -153,14 +147,6 @@ ul li {
 .footer-col .redes-sociales a:hover {
     background-color: black;
     color: white;
-}
-
-.copyright {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    color: #fff;
-
 }
 
 /*----------------------------Tablet---------------------------------------*/
