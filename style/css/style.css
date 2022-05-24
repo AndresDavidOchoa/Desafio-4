@@ -1,0 +1,144 @@
+/*Utilities*/
+/*Colores*/
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+body {
+  background-color: rgb(202, 240, 248);
+  font-family: "Roboto", sans-serif;
+}
+
+.title, .subtitle, .card-title {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.subtitle, .card-title {
+  font-size: 22px;
+}
+
+.card-title {
+  font-weight: 400;
+  font-style: italic;
+}
+
+p,
+li,
+a {
+  font-weight: 300;
+}
+
+nav img {
+  border-radius: 15px;
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+}
+
+/*Sections*/
+/*El footer empieza aqui*/
+.footer {
+  background-color: rgb(0, 150, 199);
+  padding: 70px 0;
+  margin-top: 15px;
+}
+.footer-container {
+  max-width: 1170px;
+  margin: auto;
+}
+.footer-container .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-container .footer-row .footer-col {
+  width: 33.3%;
+  padding: 0 100px;
+}
+.footer-container .footer-row .footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 35px;
+  position: relative;
+  font-weight: bold;
+}
+.footer-container .footer-row .footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: black;
+  height: 2px;
+  width: 50px;
+}
+.footer-container .footer-row .footer-col ul li:not(last-child) {
+  margin-bottom: 10px;
+}
+.footer-container .footer-row .footer-col ul li a {
+  font-size: 16px;
+  color: black;
+  display: block;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.footer-container .footer-row .footer-col ul li a:hover {
+  color: #000;
+  padding-left: 8px;
+}
+.footer-container .footer-row .footer-col .redes-sociales a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(225, 225, 255, 0.2);
+  margin: 0 25px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: black;
+  transition: all 0.5s ease;
+}
+.footer-container .footer-row .footer-col .redes-sociales a:hover {
+  background-color: black;
+  color: white;
+}
+
+/*El footer termina aqui*/
+/*Componentes*/
+/*Cards*/
+.card {
+  background-color: rgb(173, 232, 244);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 100%;
+  margin: auto;
+  margin-top: 15px;
+  text-align: center;
+  padding: 0;
+}
+.card .img-container > img {
+  width: 250px;
+  height: 250px;
+}
+.card .price {
+  color: black;
+  font-size: 22px;
+}
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  transition: 0.5s;
+}
+.card button:hover {
+  opacity: 0.7;
+}
+
+/*Cards*/
+
+/*# sourceMappingURL=style.css.map */

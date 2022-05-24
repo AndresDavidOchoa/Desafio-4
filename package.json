@@ -1,0 +1,19 @@
+{
+  "name": "proyecto-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/style.scss style/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndresDavidOchoa/sass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndresDavidOchoa/sass/issues"
+  },
+  "homepage": "https://github.com/AndresDavidOchoa/sass#readme"
+}

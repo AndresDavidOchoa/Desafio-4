@@ -1,0 +1,79 @@
+/*El footer empieza aqui*/
+.footer {
+    background-color: $ft;
+    padding: 70px 0;
+    margin-top: 15px;
+
+    &-container {
+        max-width: 1170px;
+        margin: auto;
+
+        .footer-row {
+            display: flex;
+            flex-wrap: wrap;
+
+            .footer-col {
+                width: 33.3%;
+                padding: 0 100px;
+
+                & h4 {
+
+                    font-size: 18px;
+                    margin-bottom: 35px;
+                    position: relative;
+                    font-weight: bold;
+
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: -10px;
+                        background-color: black;
+                        height: 2px;
+                        width: 50px;
+                    }
+                }
+
+                & ul li:not(last-child) {
+                    margin-bottom: 10px;
+                }
+
+                & ul li a {
+                    font-size: 16px;
+                    color: black;
+                    display: block;
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        color: #000;
+                        padding-left: 8px;
+                    }
+                }
+
+                & .redes-sociales a {
+                    display: inline-block;
+                    height: 40px;
+                    width: 40px;
+                    background-color: $rs;
+                    margin: 0 25px 10px 0;
+                    text-align: center;
+                    line-height: 40px;
+                    border-radius: 50%;
+                    color: black;
+                    transition: all 0.5s ease;
+
+                    &:hover {
+                        background-color: black;
+                        color: white;
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+/*El footer termina aqui*/

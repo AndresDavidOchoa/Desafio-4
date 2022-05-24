@@ -1,0 +1,36 @@
+body {
+    background-color: $bg;
+    font-family: $main-font;
+}
+
+.title {
+    @include fonts (25px, map-get($font-weights, _bold));
+    text-align: center;
+    margin-top: 16px;
+
+    
+}
+
+.subtitle{
+    @extend .title;
+    font-size: 22px;
+}
+
+.card-title{
+    @extend .subtitle;
+    font-weight: map-get($font-weights, _normal );
+    font-style: italic;
+}
+
+p,
+li,
+a {
+    font-weight: map-get($font-weights, _light);
+}
+
+nav img {
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+}
