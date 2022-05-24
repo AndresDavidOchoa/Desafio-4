@@ -1,0 +1,16 @@
+/*Colores*/
+$bg: rgb(202, 240, 248);
+$cards: rgb(173, 232, 244);
+$ft: rgb(0, 150, 199);
+$rs: rgba(225, 225, 255, 0.2);
+
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+$main-font: "Roboto", sans-serif;
+
+$font-weights: (
+    _light: 300,
+    _normal: 400,
+    _bold: 700
+);
