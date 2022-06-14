@@ -3,3 +3,9 @@
    font-weight: $weight;
    font-family: $family;
 }
+
+@mixin mobile {
+   
+   @media only screen and(max-width: 480px) { @content; }
+
+}
