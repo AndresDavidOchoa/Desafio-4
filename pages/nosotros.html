@@ -7,17 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre nosotros | Nosotros</title>
     <!--------------------------------------SEO--------------------------------------->
-    <meta name="description"
-        content="Nuestra pagina es el mercado para gamers de más rápido crecimiento. Obtén todo lo relacionado con juegos de PlayStation, Xbox y Nintendo de forma segura y asequible.">
+     <meta name="description"
+        content="Descubre nuestra amplia variedad de ropa para mujer y hombre. Encuentra moda y calidad al mejor precio en la tienda oficial de Modarizate">
     <meta name="keywords"
-        content="Tienda, juegos, gaming, nintendo, xbox, xbox 360, xbox One, xbox Series X, psn, PS5, PS4">
+        content="Tienda, ropa, jeans, poleras, polerones, moda, invierno, verano, mujer, hombre, sweaters">
     <meta property='og:type' content="website">
-    <meta property='og:title' content="Sobre nosotros | Nosotros">
-    <meta property='og:url' content="https://gamerizate.000webhostapp.com/pages/nosotros.html">
-    <meta property='og:image' content="https://gamerizate.000webhostapp.com/assets/games.png">
+    <meta property='og:title' content=" Sobre nosotros | Nosotros">
     <!--------------------------------------SEO--------------------------------------->
     <!-----------------------------------ICONO DE PAGINA------------------------------>
-    <link rel="shortcut icon" href="../assets/page-icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/clothes.ico" type="image/x-icon">
     <!-----------------------------------ICONO DE PAGINA------------------------------>
     <!-----------------------------------FONT AWESOME CDN----------------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -34,16 +32,19 @@
     <!------------------------------------CSS----------------------------------------->
     <link rel="stylesheet" href="../style/style.css">
     <!------------------------------------CSS----------------------------------------->
+    <!------------------------------------CDN EmailJS----------------------------------------->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!------------------------------------CDN EmailJS----------------------------------------->
 </head>
 
 <body>
 
     <!--Encabezado-->
-    <header class="container">
+    <header>
         <!--Zona navegable - menu -->
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #74b9ea;">
             <div class="container-fluid">
-                <a class="navbar-brand active" href="../index.html"> <img src="../assets/games.webp"
+                <a class="navbar-brand active" href="../index.html"> <img src="../assets/clothes.svg"
                         alt="logo de pagina" class="animate__animated animate__bounce"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -52,9 +53,9 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link" href="./nintendo.html">Nintendo</a>
-                        <a class="nav-link" href="./psn.html">PSN</a>
-                        <a class="nav-link" href="./xbox.html">XBOX</a>
+                        <a class="nav-link" href="./mujer.html">Mujer</a>
+                        <a class="nav-link" href="./hombre.html">Hombre</a>
+                        <a class="nav-link" href="./unisex.html">Unisex</a>
                         <a class="nav-link" href="./nosotros.html">Nosotros</a>
                     </div>
                 </div>
@@ -67,26 +68,24 @@
     <!-----------------------------El contenido principal empieza aqui------------------------>
     <main class="container">
 
-        <h1 class="title">Estamos en la misión de ayudar a todos en descubrir la alegría de los videojuegos.</h1>
+        <h1 class="title">Modarizate es una de las principales empresas de moda internacional.</h1>
 
-        <h2 class="subtitle">El futuro de los videojuegos va más allá del entretenimiento, ¡y es un privilegio ayudar a darle forma!
-            Estamos construyendo un marketplace seguro, asequible y sostenible para todos los jugadores de hoy y
-            mañana.
+        <h2 class="subtitle">El cliente es el centro de nuestro particular modelo de negocio, que integra diseño, fabricación, distribución y venta, a través de nuestra pagina web.
         </h2>
 
         <!---------------------------------------Formulario--------------------------------->
-        <form>
+        <form id="aboutUsForm">
             <div class="mb-3">
                 <h2 class="subtitle">Contactanos</h2>
-                <label for="exampleFormControlInput1" class="form-label">Correo electronico</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <label for="email" class="form-label">Correo electronico</label>
+                <input id="aboutUsEmailInput" name="email" type="email"  class="form-control" placeholder="name@example.com">
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Consultanos</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <label for="textArea" class="form-label">Consultanos</label>
+                <textarea class="form-control" id="aboutUsTextArea" name="textArea" rows="3"></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button id="aboutUsSubmitButton" type="submit" class="btn btn-primary">Enviar</button>
         </form>
         <!---------------------------------------Formulario--------------------------------->
 
@@ -138,10 +137,14 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
+
+    <script src="../js/aboutUs.js"></script>
 
     <!------------------------------------------------------------SCRIPTS------------------------------------------------------------->
 </body>
