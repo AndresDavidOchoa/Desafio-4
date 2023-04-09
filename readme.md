@@ -1,1 +1,1 @@
-El futuro de los videojuegos va más allá del entretenimiento, ¡y es un privilegio ayudar a darle forma! Estamos construyendo un marketplace seguro, asequible y sostenible para todos los jugadores de hoy y mañana.
+Modarizate es una de las principales empresas de moda internacional. El cliente es el centro de nuestro particular modelo de negocio, que integra diseño, fabricación, distribución y venta, a través de nuestra pagina web.
